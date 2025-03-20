@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Wear - E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Women's Wear</h1>
+        <div class="cart" onclick="viewCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men's Wear</a></li>
+            <li><a href="kids.html">Kids' Wear</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="womens">
+            <h2>Women's Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71mX4WATh-L._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81W8szHm-fL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/8122DgcOT1L._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Dress</h3>
+                    <p>₹799</p>
+                    <a href="https://www.amazon.in/GoSriKi-Anarkali-Printed-Dupatta-Yellow-GS_XXL_Yellow_XX-Large/dp/B0DD7992Y3/ref=sr_1_5?crid=F6FZIFY5DFCI&dib=eyJ2IjoiMSJ9.6D6i6NO_bXKJ_sbM-dGIVUSXS0dkm68P085WetxTU2CclHnMu9xcaExLg4is3yoICqu26xjr85iW-i9NTkFEOTZuame1GHRrD6d-ro71hJPrmxQrw8EcYRvHNC4YwiJyTt9knsWnw3Z5AfTmzRPulVkGBw-fcJvH-o0YgIY_V0sZL7O6JYDyUIZh8r15dppkhnlTQYwNNq_uOwSRPtmyqFDdx_kXhfH7qxdLZXfLTxEC6Bmg1DxFMmtGF9YJF2TKL4DyGehINLz-l9jrQJsZDZkBCifcs4bkIqoArq0AVCQmjxASzFjBzkO41ip1EFZvk_GbbbXNgNI_F4WUN5Re-5LaEhK5cHcLwdB2c_x9oqpoaXIkJjeQX8kfucvhn5H0x0L-fCWQae8GyhskMTahMGg3BbcgtmDXaHgE_QG72G--bqq9SdjG_2_Pdm8G3fMb.Mq6BMiISnmxCKAIyKhUMDtnzEVg2kh5MRaDd9ueOyM8&dib_tag=se&keywords=women%2Bdress&qid=1742353782&sprefix=women%2Bdress%2B%2Caps%2C259&sr=8-5&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Dress', 799)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71Wmk89ALXL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61qexwXES8L._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71Rs+MDoDCL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Top</h3>
+                    <p>₹399</p>
+                    <a href="https://www.amazon.in/Leriya-Fashion-Standard-Length-LF-W2199_Light/dp/B0DQLGVZBM/ref=sr_1_11?crid=1JQ0XMBBVN6M1&dib=eyJ2IjoiMSJ9.zt2o-WNx-76ZhZLSbKpysdLeohUgflx4eOlfGUOKhBENmn1wP9ogLIsGmrAzrpHAN-9LNpvCI4__BANb9cvO8PVXhOqupzFT9BQxBVeCUBMCFbQrK2eqthVEneNTOwQrKbm2gKsB-R6G98KIQowjv-UNDnZWDydoJ1Ern6YR5cicgX4Aoj4gkJrutQ7k_k0v2bs-7AO-ATber5ucv7qD_oQQY4djicPqzDRyioOOjDu7HMiNysAzAudiz8rqtRgPGB20-Svul9w_aadqpOUvfMP6wmqA5p-cl9jzhmis7m2Lamd-ZvrZVxugqQdYxPrzaJbPJs43gxYBrw8aX1dcOhif764mnGtfWtwPHeKrYNSuvMr3-Y_iyaARHR69bl2VbTgoE1g2zcySsHisekbn-o3BdoTMwIhyyCZG_TMi6OVoqQeVoO86sIcahT96IebL.Yax-0rhW4qZ7HrROBojvCbGtgZLQ2e8PlzxzGY3KSA4&dib_tag=se&keywords=women%2Btops&qid=1742398353&sprefix=women%2Btops%2Caps%2C280&sr=8-11&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Top', 399)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71teiu5GqNL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71zLRbm1qTL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71L1TjfDF5L._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Top</h3>
+                    <p>₹499</p>
+                    <a href="https://www.amazon.in/rytras-Womens-Floral-Printed-Cotton/dp/B0CQ4ZVV1Q/ref=sr_1_9?crid=39U65IDEYZA8Q&dib=eyJ2IjoiMSJ9.Mc-M23ii42VTvVyif4wPgcLMr0aPqU3Br9zV3XVE4PaHiCwTrZKnqVsyoRxsYpgjo9at0mGLQR1B1YPQXnHWzJdsMZ39mgPAiBSNBa3n4_6sJEHfu4caa4Zb1DCYpP_4sg5WgTX5wQKvsaIFMig5la1sIeMitRtVgAIh2CCLLGhH0gybfOXWfN1RvMofddFv0mOLzhlyZoSbzBL6cocEnk82AJthR6-mHgynCur0NM27-Ry-cNOaHjSwZiVQsLZvqxXhvk9IBwDFeREkn14ovsRcSLNqCY8PVHG40r8fW_b4OBP6LSkwTw4IeIqiHjvseiP2OlL7L8TPlXQf-490nqA6sSISUR-MykF0SnXQ-2Z1AzgyCfPB3kfCA9BWtYFvsGfPHEMvJfrJEmu8W-V-U_W7gTGE-fhXcRhoargA8QpXKHatVlwGzTnuXLN2eEJr.ss_nB8emvi-AVUj0vAotsxaowJ-vMhdNquwnDYqdh0w&dib_tag=se&keywords=Women%27s%2BTop&qid=1742356595&sprefix=women%27s%2Btop%2Caps%2C466&sr=8-9&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Top', 499)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71dyxprJmnL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/717rZYxGUXL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/714HJyb09JL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Dress</h3>
+                    <p>₹2399</p>
+                    <a href="https://www.amazon.in/BIBA-Womens-Spandex-Knee-Length-W1641_Berry_XL/dp/B0B5X68XWN/ref=sr_1_3_sspa?crid=FVTDGXWX62G2&dib=eyJ2IjoiMSJ9.plknRJTIMY2BFDbuMmJm9KeLvM0L4auLrndWZCIyYkNA8IF-aJtyFSDDE7ePoYt4pe5wTrxqbH5l_Fcd3lb1Qp7RmBaDfFk8J1HeWpXnnWclnw5fHgK6CpHbk7kqZOOWytqhtepCdvr4HccmHWWiFgPcPF6U7BCOkhCEs3WpaS69XQHQJCAax_M1QcOywgLSSvdzvv8M5TY5uLAVUgTC8yip8mvHLxQmIStRy9JilW32uOdX2nj_iqcd6kiIZBOR4fZS9Ly3X7GEVX_z6OQqhizPJj0Wqfa4yJq8SX-_77s.S_iDOrLD288Hxo18nMXVZwO_Titu5fCnoFp9Jc84fKs&dib_tag=se&keywords=Women%27s%2BDresses&qid=1742357238&sprefix=women%27s%2Bdresses%2Caps%2C254&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Dress', 2399)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61IhrjrcrLL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71izbupug7L._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71WHaT6tRIL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Anarkali Kurta</h3>
+                    <p>₹799</p>
+                    <a href="https://www.amazon.in/Alvami-Women-Anarkali-Dupatta-Maroon/dp/B0DG2T81HH/ref=sr_1_5?crid=2XSO4NQQ9P10Y&dib=eyJ2IjoiMSJ9.QTDZjX5OODJIwkZBRUXq8IJd0YlxQKnCULOo2rMocLrltY6NfXJNITzvZ9AKM_8mWcaNJai3iALcTaOlPep23heTMDyVk5o806BVq5sOIeRsumqX7LwmJDDNjT5PAmDEjng0bOVSXY8KdPfawXHUG_PdAOPiQyJ3cggjFgTEIoJnFmn00p0XoZj5Cm-LUtxelnDNYqey2mKQBCZ80uA0bTHEmCLI9ByzfHf9MA0rS2mn5_gFaKvOEvmos7_p3UjWpd_3Dl2noYs6Da5dbxKbXNIrZJ-WsB18lVBxY_f65sb_jKZpKUTS4OSIXnyH879gorthDbe9F8fCAfZd9OFJmewOP38B952mdJqZMFjdxFIVd-EXRGhLN_ukK-NWFk4xC7ccfmFo9fufEjcrNC0ssb83O0vWidB3bSqS2D_hua_hJ5WsXrMnLj-DkrjeRBc0.lT3XWyFmjAC_MZ01K1Bbm1sgN_5FNuO41i0CB6DBenA&dib_tag=se&keywords=women%27s%2Bkurta&qid=1742393852&sprefix=women%27s%2Bkurtha%2Caps%2C277&sr=8-5&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Anarkali Kurta', 799)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/81pCdAm35JL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81A-x3RaykL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81+HExe-6UL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Floral Print Top</h3>
+                    <p>₹266</p>
+                    <a href="https://www.amazon.in/Sheetal-Associates-Womens-Casual-Sleeves/dp/B0DF5KD9SR/ref=sr_1_6?crid=39U65IDEYZA8Q&dib=eyJ2IjoiMSJ9.Mc-M23ii42VTvVyif4wPgcLMr0aPqU3Br9zV3XVE4PaHiCwTrZKnqVsyoRxsYpgjo9at0mGLQR1B1YPQXnHWzJdsMZ39mgPAiBSNBa3n4_6sJEHfu4caa4Zb1DCYpP_4sg5WgTX5wQKvsaIFMig5la1sIeMitRtVgAIh2CCLLGhH0gybfOXWfN1RvMofddFv0mOLzhlyZoSbzBL6cocEnk82AJthR6-mHgynCur0NM27-Ry-cNOaHjSwZiVQsLZvqxXhvk9IBwDFeREkn14ovsRcSLNqCY8PVHG40r8fW_b4OBP6LSkwTw4IeIqiHjvseiP2OlL7L8TPlXQf-490nqA6sSISUR-MykF0SnXQ-2Z1AzgyCfPB3kfCA9BWtYFvsGfPHEMvJfrJEmu8W-V-U_W7gTGE-fhXcRhoargA8QpXKHatVlwGzTnuXLN2eEJr.ss_nB8emvi-AVUj0vAotsxaowJ-vMhdNquwnDYqdh0w&dib_tag=se&keywords=Women%27s%2BTop&qid=1742356595&sprefix=women%27s%2Btop%2Caps%2C466&sr=8-6&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Floral Print Top', 266)">Add to Cart</button>
+                    </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61U0DwPuGsL._SY879_.jpg" alt="Dress Image 1">
+                        <img src="https://m.media-amazon.com/images/I/61U0DwPuGsL._SY879_.jpg   " alt="Dress Image 2">
+                        <img src="https://m.media-amazon.com/images/I/31hrL2FhlWL._SX38_SY50_CR,0,0,38,50_.jpg" alt="Dress Image 3">
+                    </div>
+                    
+                    <h3>Women's Dress</h3>
+                    <p>₹1,019</p>
+                    <a href="https://www.amazon.in/Spykar-Womens-Straight-Cotton-BEL02BB08Black28_Black_28/dp/B0BG3VFR7B/ref=sr_1_2_sspa?crid=671BN9Z7GUG4&dib=eyJ2IjoiMSJ9.dLmIMGuNYQzfA6bIOroBjjenrUyth4Hoew8pkdoufKqNCMz01uiQDAO-fUMXg9T0oXxrCzjoA8A0vEj8X1UloqSCZhhcK-H7E-lb-mQAdfkwLB1Zp5TdlY8XL-pIc4_G2mXvqk60rg-3Xi2KQhXler-Vgpx2qAw5gYRp7YXpX9J_g7QmyJipV9HNl-fMt2wkfcDeuxbyncfXgIq_O9pycN0TnAWV1Gq3ckKWGTZ9vdHxB85oA8nA1cApb1jKx4HISyu8Vf6moYu3xjLNM5Pc7pgYNeWb9Tefy_0khNhOkJs.WnWstEql7gGhdPRj6hUgrvLR2OBsba4Q8jMsz-MPMWQ&dib_tag=se&keywords=Women%27s%2B%2Bjeans&qid=1742394019&sprefix=women%27s%2B%2Bjeans%2Caps%2C266&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Dress', 1019)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Modal for Full-Screen Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

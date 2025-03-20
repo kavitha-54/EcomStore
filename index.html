@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fashion & Clothing</h1>
+        <div class="cart" onclick="viewCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+        
+    </header>
+
+    <nav class="banner">
+        <div class="category-container">
+            <div class="category">
+                <a href="men.html">
+                    <img src="images/banner-men.jpg" alt="Men's Wear">
+                    <h3>Men's Wear</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="women.html">
+                    <img src="images/banner-women.jpg" alt="Women's Wear">
+                    <h3>Women's Wear</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="kids.html">
+                    <img src="images/banner-kids.jpg" alt="Kids' Wear">
+                    <h3>Kids' Wear</h3>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <main>
+        <!-- Men's Wear Section -->
+        <section id="mens">
+            <h2>Men's Wear</h2>
+            <div class="products">
+                
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/6191fQZv3GL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61twjKRSOVL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71NaG0mRtmL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Shirt</h3>
+                    <p>₹399</p>
+                    <a href="https://www.amazon.in/Bellstone-Solid-Cotton-Straight-Yellow/dp/B0CJV3WT73/ref=sr_1_53?crid=1SJUP84ZYRQB1&dib=eyJ2IjoiMSJ9.tn9KnrA7lX_yrUcvr-J0kbqXZF9kapmxWQv0ScsuHIpdFEj5sjGhwcRqIQ-hCqwRAvsCkXPnIDstyfHMAooWmmO2rh9KVvWeJDGiCRsAK3J9Pvmu_JvnFi_IEvI4W-k73S9-BJibbw9_9EnYmiz9-3O2-boygeU7xBGjd_Ymhd4vgL_tFiEYmmdMH5orVjsMrnKP8jWG8PpQp6gKWFqDi0UxzAJcjxIe_RXKZ1AuI7hszTmi4_E0j0qVKM-dw3xjAY4vHwVdU6djgcZZJY7puyVgtdJIQNhyzjl2MimjfiFZLxVHXAdJi6gzbQVgs20QwX_rLRmqYSSBKK0W5bf6odiZR_Lpre5TUaEPUXKwIfJhTdrl_BUJKVhz-lRW2hBWIpIkSkhOsNiVtVVlevpAV1GVYK6w8QS2PVUJku-6Fjv5k4Ml9LlR7qtCDlNsnnmg.9mn64g5TmH9QBCwC9twg6qVuITDZAYV4b1zfVME_CaM&dib_tag=se&keywords=mens+shirts+branded&qid=1742397331&sprefix=mens%2Caps%2C247&sr=8-53" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Shirt', 399)">Add to Cart</button>
+                </div>
+                
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61upFl2r5QL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/718oBgWLd0L._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/718oBgWLd0L._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Shirt</h3>
+                    <p>₹469</p>
+                    <a href="" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Shirt', 469)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/81V9Cw7P4tL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/818hJYSQBmL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/91Cehu+rhCL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's T-Shirt</h3>
+                    <p>₹528</p>
+                    <a href="https://www.amazon.in/Peter-England-Regular-Shirt-PCKPSRGP483904_Green/dp/B09XMTQL9W/ref=sr_1_7?crid=2SYLUVSG1NTZ0&dib=eyJ2IjoiMSJ9.Y1gid_AfXs5bUypUV-0Ly_IGVBNbPNvUnSyO4dF3S0J5LXa5U91mMiR5mLQx_g3LY0dUkd5pEmJf7q76oAFIxcADHXHmptHyxnsl88nwDzmWoNlWBoLS7vXjzkVEZiYe2ZxA7neYQ09bw3tgmSfyfeYa8FuGkPzbBrCl1tKiPK_yOO0RI-Fu9lbjMbUIOm3t_Ed8yL7ftp1lJLvNEleZzw2PjjYdaVaCX8jSNcn6y7VNd5yx25koaqxVgF8mkYn8kg6Wk4zixLwPVBK1eWNasy_n32foUvGf6eWctr_KqgEhMAlG2oQi7mAk2zvA57fwwvR00eq07yxuNkDvIBrt0DwnG4peb6X9Jc-Ki5TQFMRaea41xNLP7WumQpsAo7aGL9EAykAdc1lxDNxMaEe6OIcPU15B_Z8s1plto4OhLpa6aB2vbKYy_bvoXRZFN6A2.cWcqOSJjR23pZXxybhbgFfc9X7dFhmDA0GQpWtONFlU&dib_tag=se&keywords=men%2Bt-shirt%2Bcotton&qid=1742398721&sprefix=men%2Bt-shirt%2Bcotton%2Caps%2C264&sr=8-7&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s T-Shirt', 528)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71qNkES5cYL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71qNkES5cYL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71pNXMYmLPL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's T-Shirt</h3>
+                    <p>₹949</p>
+                    <a href="https://www.amazon.in/fanideaz-Branded-Striped-Tshirts-Men_Blue23_L/dp/B0B1XFPDCK/ref=sr_1_4_sspa?crid=1EKZSPPHWBLKA&dib=eyJ2IjoiMSJ9.fFfduk1kKnwWHsldS_pKmaviH0Nm_nqCtkXS5qWBsm5HTPb0b5z5ORmJv6GiMgAXGZnvEkvheu9V_khyOZmeHFHnjBS_QY_7LnkqM-WCu0R_mC1wXvItpZoeTpk6Gqg_23kLbH9UHAQaV12UYtXSPZrrKXmEJDwDBPTz1yjAPdEZUd8hcTxYg_5NM6rMHvRmpqGInLDNqnLhATvdqSl7XrdmnEEXxeFXRXYqbedNnbneT1dFzC1uMPtXz5gaemlTmF770hpOJJiacl3kyYxPTOPw8WaaFEpCxJwWP0pDERk.4HBoY7_2fKbnvR5DR9YWWmbCjMpnTVTRtHqdjo8QfhU&dib_tag=se&keywords=t%2Bshirt%2Bfor%2Bmen%2Bcotton%2Bbranded&qid=1742398864&sprefix=men%2Bt-shirt%2Bcotton%2Caps%2C331&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s T-Shirt', 949)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/81ysjTMD4BL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81Dk90JwUbL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81QDxg-SjuL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Jeans</h3>
+                    <p>₹749</p>
+                    <a href="https://www.amazon.in/Lymio-Jeans-Pants-Denim-Jeans-06-07-08/dp/B0D172BMY2/ref=sr_1_7?crid=IUI96IKOBJF5&dib=eyJ2IjoiMSJ9.B35Ar3B8fMAL_z4RSzEFSPsF-xXu6OjDgkx9N1tA7tN7QKR1HGRVSH0kY2hbVRIZO09eq-8z7IyoOqohKnT2x-DBYnyL5CmLzG4FdMaA_7aCSnKW-j-txC5gRUI_kKyJFQlFNo_qk8V33IJYgZL0tb1cXU7yTDObi_Py3NXcB01WnHwc7Rr2l9RCa26Gc7wPCcq2b6QYVhwByFbkpTKL20QY09MujwCX0BKdeDG-gy2OpnVFC84ib90aYyTIdjhlrFuvPZ_9X-TIoKE4nTRjdy1ntPzLCJEFQlVYDlNZBaQiRuPZ_hT2JDjAkLn8zGkyY0534gW-5JFF1LbUe8nojN8I8pj0fr63qA7bvXUQIlWZOh7Fqs8GuZ405QKlu0EF_3PblGAMuRVVD7Wki1Ww-YDXYJ2u6XLvgEflXRAqK4zn6ld5od7Inq5syv36yjKD.OJ3nZP_AO-aB-ZOLZYfR3Y6l4-yDDgswOfnzZulUTgI&dib_tag=se&keywords=jeans%2Bfor%2Bmen%2Bcotton%2Bbranded&qid=1742398958&sprefix=jeans%2Bfor%2Bmen%2Bcotton%2Bbranded%2Caps%2C258&sr=8-7&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Jeans', 749)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71sditc5d6L._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71VwUrimg8L._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/91HYIhu8rtL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Jeans</h3>
+                    <p>₹999</p>
+                    <a href="https://www.amazon.in/Peter-England-Skinny-Jeans-PJDNASKF704235_Navy_34/dp/B0C1RZ6F15/ref=sr_1_11?crid=IUI96IKOBJF5&dib=eyJ2IjoiMSJ9.B35Ar3B8fMAL_z4RSzEFSPsF-xXu6OjDgkx9N1tA7tN7QKR1HGRVSH0kY2hbVRIZO09eq-8z7IyoOqohKnT2x-DBYnyL5CmLzG4FdMaA_7aCSnKW-j-txC5gRUI_kKyJFQlFNo_qk8V33IJYgZL0tb1cXU7yTDObi_Py3NXcB01WnHwc7Rr2l9RCa26Gc7wPCcq2b6QYVhwByFbkpTKL20QY09MujwCX0BKdeDG-gy2OpnVFC84ib90aYyTIdjhlrFuvPZ_9X-TIoKE4nTRjdy1ntPzLCJEFQlVYDlNZBaQiRuPZ_hT2JDjAkLn8zGkyY0534gW-5JFF1LbUe8nojN8I8pj0fr63qA7bvXUQIlWZOh7Fqs8GuZ405QKlu0EF_3PblGAMuRVVD7Wki1Ww-YDXYJ2u6XLvgEflXRAqK4zn6ld5od7Inq5syv36yjKD.OJ3nZP_AO-aB-ZOLZYfR3Y6l4-yDDgswOfnzZulUTgI&dib_tag=se&keywords=jeans%2Bfor%2Bmen%2Bcotton%2Bbranded&qid=1742398958&sprefix=jeans%2Bfor%2Bmen%2Bcotton%2Bbranded%2Caps%2C258&sr=8-11&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Jeans', 999)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61G1ufndcCL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61+2fb93YiL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71rD5tCKMlL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Jacket</h3>
+                    <p>₹1,359</p>
+                    <a href="https://www.amazon.in/XYXX-French-Cotton-Zip-Up-Jacket/dp/B0BLH9HF7N/ref=sr_1_5?crid=39FT611N2K0LR&dib=eyJ2IjoiMSJ9.DPD0lAyEeF459sRJG0_F5ftL24Ll9HYI6w_nk9UGp54kUJSQVni8-4kslXNBb7EFpAayNwk0LE5LD-PHOsUMNUK4gRCndeeByj5GuVpdTxOuuO_-oY16bzmQU_Fi3Y4D-72DixqcjsPvWMUBntbGyxwXydWM8oQblW8o5RxufhXerp21GSCUO--miYIHdCWqMDzHsCdFa9Riwm2sCxjpDhFGEyLJ6bxKI0jGT3BIdYMcK3x93WZS1XN5PJkU8Gj--3MCFfoUDC7yRVuJytx4OZRkWUzBcA2PaN2JSKl9WWmzkNsMWlNvj9T2aFbwBCwWKMhwAn_VR2Q36uafTo-xk0ioPHry8Tmir9HZqWcLg8DZEQjgRC-GK2rwlb02ettdYP_FmsskB5BNuzrKrXcZBcjR94YOKjoYCb-shEX81FqN8atpS8nFZd36iAyzVf5k.HUWvbCzrt9YhSiNeZQaqCsEVZ3MLtcWfCNa864_SluU&dib_tag=se&keywords=jackets%2Bfor%2Bmen%2Bcotton%2Bbranded&qid=1742399150&sprefix=jackets%2Bfor%2Bmen%2Bcotton%2Bbranded%2Caps%2C241&sr=8-5&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Jacket', 1359)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71J9pEB9JAL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71J9pEB9JAL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71J9pEB9JAL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Jacket</h3>
+                    <p>₹699</p>
+                    <a href="https://www.amazon.in/AWG-ALL-WEATHER-GEAR-Spectra/dp/B08KWFRY6W/ref=sr_1_31?crid=39FT611N2K0LR&dib=eyJ2IjoiMSJ9.DPD0lAyEeF459sRJG0_F5ftL24Ll9HYI6w_nk9UGp54kUJSQVni8-4kslXNBb7EFpAayNwk0LE5LD-PHOsUMNUK4gRCndeeByj5GuVpdTxOuuO_-oY16bzmQU_Fi3Y4D-72DixqcjsPvWMUBntbGyxwXydWM8oQblW8o5RxufhXerp21GSCUO--miYIHdCWqMDzHsCdFa9Riwm2sCxjpDhFGEyLJ6bxKI0jGT3BIdYMcK3x93WZS1XN5PJkU8Gj--3MCFfoUDC7yRVuJytx4OZRkWUzBcA2PaN2JSKl9WWmzkNsMWlNvj9T2aFbwBCwWKMhwAn_VR2Q36uafTo-xk0ioPHry8Tmir9HZqWcLg8DZEQjgRC-GK2rwlb02ettdYP_FmsskB5BNuzrKrXcZBcjR94YOKjoYCb-shEX81FqN8atpS8nFZd36iAyzVf5k.HUWvbCzrt9YhSiNeZQaqCsEVZ3MLtcWfCNa864_SluU&dib_tag=se&keywords=jackets%2Bfor%2Bmen%2Bcotton%2Bbranded&qid=1742399150&sprefix=jackets%2Bfor%2Bmen%2Bcotton%2Bbranded%2Caps%2C241&sr=8-31&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Jacket', 699)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71KdN9-puYL._SY695_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71KdN9-puYL._SY695_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61qNWp6cjhL._SY695_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Shoes</h3>
+                    <p>₹1,999</p>
+                    <a href="https://www.amazon.in/Red-Chief-Sneakers-10-RC3504-002/dp/B075LD21Y2/ref=sr_1_3_sspa?crid=36LND1E8E0MVJ&dib=eyJ2IjoiMSJ9.2sJJow__AM6JrN8XBWeg82ezNWVxtXZzkzjtXLUvmTmjl4Z0kri1TuZV-CjHCOtiGfq0xavS8xBK5TJG_HW7_zkR5SJnFZy-Qh5PMQreF5SDVeSJD9bdtk7KQsE98grDFEQqIFNB2a0KdDJg69Md6-vRClcgUuc9q-SbASyF16IrR5lEy8W4n0bxuf5LsIv37rqjaQUhkwCTISLnxQ7Rsq2WIdpq-d90gQ62cRjvyjmLq0KYapLxVRGTJeURJ3VjB4QezLjs8sHJp6Nn0MNNitTuneVvi6tnmiUsG-HYW7Q.UNf5PU7Ctn2TU5hV34rsrdr5UgVhYZChcVhy_K81upI&dib_tag=se&keywords=Shoes%2Bfor%2Bmen%2Bcotton%2Bbranded&qid=1742399372&sprefix=shoes%2Bfor%2Bmen%2Bcotton%2Bbranded%2Caps%2C256&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Shoes', 1999)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61h-EXsIMbL._SY695_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61eRs45wyWL._SY695_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61yke20vwbL._SY695_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Men's Shoes</h3>
+                    <p>₹1,239</p>
+                    <a href="https://www.amazon.in/AVANT-Mens-Storm-Black-Running/dp/B0CT33JY29/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.2e7595f7-5329-47f7-beca-04dc18a21cee%3Aamzn1.sym.2e7595f7-5329-47f7-beca-04dc18a21cee&crid=36LND1E8E0MVJ&cv_ct_cx=Shoes%2Bfor%2Bmen%2Bcotton%2Bbranded&keywords=Shoes%2Bfor%2Bmen%2Bcotton%2Bbranded&pd_rd_i=B0CT33JY29&pd_rd_r=94738f46-27a0-4c13-9cdf-0b18d8925264&pd_rd_w=9jG69&pd_rd_wg=41RMy&pf_rd_p=2e7595f7-5329-47f7-beca-04dc18a21cee&pf_rd_r=PAXX67CK454JSDV14P3Q&qid=1742399372&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=shoes%2Bfor%2Bmen%2Bcotton%2Bbranded%2Caps%2C256&sr=1-3-883a54c7-f466-4d42-997c-6d482a360a1a-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Men\'s Shoes', 1239)">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Women's Wear Section -->
+        <section id="womens">
+            <h2>Women's Wear</h2>
+            <div class="products">
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71mX4WATh-L._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81W8szHm-fL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/8122DgcOT1L._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Dress</h3>
+                    <p>₹799</p>
+                    <a href="https://www.amazon.in/GoSriKi-Anarkali-Printed-Dupatta-Yellow-GS_XXL_Yellow_XX-Large/dp/B0DD7992Y3/ref=sr_1_5?crid=F6FZIFY5DFCI&dib=eyJ2IjoiMSJ9.6D6i6NO_bXKJ_sbM-dGIVUSXS0dkm68P085WetxTU2CclHnMu9xcaExLg4is3yoICqu26xjr85iW-i9NTkFEOTZuame1GHRrD6d-ro71hJPrmxQrw8EcYRvHNC4YwiJyTt9knsWnw3Z5AfTmzRPulVkGBw-fcJvH-o0YgIY_V0sZL7O6JYDyUIZh8r15dppkhnlTQYwNNq_uOwSRPtmyqFDdx_kXhfH7qxdLZXfLTxEC6Bmg1DxFMmtGF9YJF2TKL4DyGehINLz-l9jrQJsZDZkBCifcs4bkIqoArq0AVCQmjxASzFjBzkO41ip1EFZvk_GbbbXNgNI_F4WUN5Re-5LaEhK5cHcLwdB2c_x9oqpoaXIkJjeQX8kfucvhn5H0x0L-fCWQae8GyhskMTahMGg3BbcgtmDXaHgE_QG72G--bqq9SdjG_2_Pdm8G3fMb.Mq6BMiISnmxCKAIyKhUMDtnzEVg2kh5MRaDd9ueOyM8&dib_tag=se&keywords=women%2Bdress&qid=1742353782&sprefix=women%2Bdress%2B%2Caps%2C259&sr=8-5&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Dress', 799)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71Wmk89ALXL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61qexwXES8L._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71Rs+MDoDCL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Top</h3>
+                    <p>₹399</p>
+                    <a href="https://www.amazon.in/Leriya-Fashion-Standard-Length-LF-W2199_Light/dp/B0DQLGVZBM/ref=sr_1_11?crid=1JQ0XMBBVN6M1&dib=eyJ2IjoiMSJ9.zt2o-WNx-76ZhZLSbKpysdLeohUgflx4eOlfGUOKhBENmn1wP9ogLIsGmrAzrpHAN-9LNpvCI4__BANb9cvO8PVXhOqupzFT9BQxBVeCUBMCFbQrK2eqthVEneNTOwQrKbm2gKsB-R6G98KIQowjv-UNDnZWDydoJ1Ern6YR5cicgX4Aoj4gkJrutQ7k_k0v2bs-7AO-ATber5ucv7qD_oQQY4djicPqzDRyioOOjDu7HMiNysAzAudiz8rqtRgPGB20-Svul9w_aadqpOUvfMP6wmqA5p-cl9jzhmis7m2Lamd-ZvrZVxugqQdYxPrzaJbPJs43gxYBrw8aX1dcOhif764mnGtfWtwPHeKrYNSuvMr3-Y_iyaARHR69bl2VbTgoE1g2zcySsHisekbn-o3BdoTMwIhyyCZG_TMi6OVoqQeVoO86sIcahT96IebL.Yax-0rhW4qZ7HrROBojvCbGtgZLQ2e8PlzxzGY3KSA4&dib_tag=se&keywords=women%2Btops&qid=1742398353&sprefix=women%2Btops%2Caps%2C280&sr=8-11&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Top', 399)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71teiu5GqNL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71zLRbm1qTL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71L1TjfDF5L._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Top</h3>
+                    <p>₹499</p>
+                    <a href="https://www.amazon.in/rytras-Womens-Floral-Printed-Cotton/dp/B0CQ4ZVV1Q/ref=sr_1_9?crid=39U65IDEYZA8Q&dib=eyJ2IjoiMSJ9.Mc-M23ii42VTvVyif4wPgcLMr0aPqU3Br9zV3XVE4PaHiCwTrZKnqVsyoRxsYpgjo9at0mGLQR1B1YPQXnHWzJdsMZ39mgPAiBSNBa3n4_6sJEHfu4caa4Zb1DCYpP_4sg5WgTX5wQKvsaIFMig5la1sIeMitRtVgAIh2CCLLGhH0gybfOXWfN1RvMofddFv0mOLzhlyZoSbzBL6cocEnk82AJthR6-mHgynCur0NM27-Ry-cNOaHjSwZiVQsLZvqxXhvk9IBwDFeREkn14ovsRcSLNqCY8PVHG40r8fW_b4OBP6LSkwTw4IeIqiHjvseiP2OlL7L8TPlXQf-490nqA6sSISUR-MykF0SnXQ-2Z1AzgyCfPB3kfCA9BWtYFvsGfPHEMvJfrJEmu8W-V-U_W7gTGE-fhXcRhoargA8QpXKHatVlwGzTnuXLN2eEJr.ss_nB8emvi-AVUj0vAotsxaowJ-vMhdNquwnDYqdh0w&dib_tag=se&keywords=Women%27s%2BTop&qid=1742356595&sprefix=women%27s%2Btop%2Caps%2C466&sr=8-9&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Top', 499)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71dyxprJmnL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/717rZYxGUXL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/714HJyb09JL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Dress</h3>
+                    <p>₹2399</p>
+                    <a href="https://www.amazon.in/BIBA-Womens-Spandex-Knee-Length-W1641_Berry_XL/dp/B0B5X68XWN/ref=sr_1_3_sspa?crid=FVTDGXWX62G2&dib=eyJ2IjoiMSJ9.plknRJTIMY2BFDbuMmJm9KeLvM0L4auLrndWZCIyYkNA8IF-aJtyFSDDE7ePoYt4pe5wTrxqbH5l_Fcd3lb1Qp7RmBaDfFk8J1HeWpXnnWclnw5fHgK6CpHbk7kqZOOWytqhtepCdvr4HccmHWWiFgPcPF6U7BCOkhCEs3WpaS69XQHQJCAax_M1QcOywgLSSvdzvv8M5TY5uLAVUgTC8yip8mvHLxQmIStRy9JilW32uOdX2nj_iqcd6kiIZBOR4fZS9Ly3X7GEVX_z6OQqhizPJj0Wqfa4yJq8SX-_77s.S_iDOrLD288Hxo18nMXVZwO_Titu5fCnoFp9Jc84fKs&dib_tag=se&keywords=Women%27s%2BDresses&qid=1742357238&sprefix=women%27s%2Bdresses%2Caps%2C254&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Dress', 2399)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61IhrjrcrLL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71izbupug7L._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71WHaT6tRIL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Anarkali Kurta</h3>
+                    <p>₹799</p>
+                    <a href="https://www.amazon.in/Alvami-Women-Anarkali-Dupatta-Maroon/dp/B0DG2T81HH/ref=sr_1_5?crid=2XSO4NQQ9P10Y&dib=eyJ2IjoiMSJ9.QTDZjX5OODJIwkZBRUXq8IJd0YlxQKnCULOo2rMocLrltY6NfXJNITzvZ9AKM_8mWcaNJai3iALcTaOlPep23heTMDyVk5o806BVq5sOIeRsumqX7LwmJDDNjT5PAmDEjng0bOVSXY8KdPfawXHUG_PdAOPiQyJ3cggjFgTEIoJnFmn00p0XoZj5Cm-LUtxelnDNYqey2mKQBCZ80uA0bTHEmCLI9ByzfHf9MA0rS2mn5_gFaKvOEvmos7_p3UjWpd_3Dl2noYs6Da5dbxKbXNIrZJ-WsB18lVBxY_f65sb_jKZpKUTS4OSIXnyH879gorthDbe9F8fCAfZd9OFJmewOP38B952mdJqZMFjdxFIVd-EXRGhLN_ukK-NWFk4xC7ccfmFo9fufEjcrNC0ssb83O0vWidB3bSqS2D_hua_hJ5WsXrMnLj-DkrjeRBc0.lT3XWyFmjAC_MZ01K1Bbm1sgN_5FNuO41i0CB6DBenA&dib_tag=se&keywords=women%27s%2Bkurta&qid=1742393852&sprefix=women%27s%2Bkurtha%2Caps%2C277&sr=8-5&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Anarkali Kurta', 799)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/81pCdAm35JL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81A-x3RaykL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81+HExe-6UL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Women's Floral Print Top</h3>
+                    <p>₹266</p>
+                    <a href="https://www.amazon.in/Sheetal-Associates-Womens-Casual-Sleeves/dp/B0DF5KD9SR/ref=sr_1_6?crid=39U65IDEYZA8Q&dib=eyJ2IjoiMSJ9.Mc-M23ii42VTvVyif4wPgcLMr0aPqU3Br9zV3XVE4PaHiCwTrZKnqVsyoRxsYpgjo9at0mGLQR1B1YPQXnHWzJdsMZ39mgPAiBSNBa3n4_6sJEHfu4caa4Zb1DCYpP_4sg5WgTX5wQKvsaIFMig5la1sIeMitRtVgAIh2CCLLGhH0gybfOXWfN1RvMofddFv0mOLzhlyZoSbzBL6cocEnk82AJthR6-mHgynCur0NM27-Ry-cNOaHjSwZiVQsLZvqxXhvk9IBwDFeREkn14ovsRcSLNqCY8PVHG40r8fW_b4OBP6LSkwTw4IeIqiHjvseiP2OlL7L8TPlXQf-490nqA6sSISUR-MykF0SnXQ-2Z1AzgyCfPB3kfCA9BWtYFvsGfPHEMvJfrJEmu8W-V-U_W7gTGE-fhXcRhoargA8QpXKHatVlwGzTnuXLN2eEJr.ss_nB8emvi-AVUj0vAotsxaowJ-vMhdNquwnDYqdh0w&dib_tag=se&keywords=Women%27s%2BTop&qid=1742356595&sprefix=women%27s%2Btop%2Caps%2C466&sr=8-6&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Floral Print Top', 266)">Add to Cart</button>
+                    </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61U0DwPuGsL._SY879_.jpg" alt="Dress Image 1">
+                        <img src="https://m.media-amazon.com/images/I/61U0DwPuGsL._SY879_.jpg   " alt="Dress Image 2">
+                        <img src="https://m.media-amazon.com/images/I/31hrL2FhlWL._SX38_SY50_CR,0,0,38,50_.jpg" alt="Dress Image 3">
+                    </div>
+                    
+                    <h3>Women's Dress</h3>
+                    <p>₹1,019</p>
+                    <a href="https://www.amazon.in/Spykar-Womens-Straight-Cotton-BEL02BB08Black28_Black_28/dp/B0BG3VFR7B/ref=sr_1_2_sspa?crid=671BN9Z7GUG4&dib=eyJ2IjoiMSJ9.dLmIMGuNYQzfA6bIOroBjjenrUyth4Hoew8pkdoufKqNCMz01uiQDAO-fUMXg9T0oXxrCzjoA8A0vEj8X1UloqSCZhhcK-H7E-lb-mQAdfkwLB1Zp5TdlY8XL-pIc4_G2mXvqk60rg-3Xi2KQhXler-Vgpx2qAw5gYRp7YXpX9J_g7QmyJipV9HNl-fMt2wkfcDeuxbyncfXgIq_O9pycN0TnAWV1Gq3ckKWGTZ9vdHxB85oA8nA1cApb1jKx4HISyu8Vf6moYu3xjLNM5Pc7pgYNeWb9Tefy_0khNhOkJs.WnWstEql7gGhdPRj6hUgrvLR2OBsba4Q8jMsz-MPMWQ&dib_tag=se&keywords=Women%27s%2B%2Bjeans&qid=1742394019&sprefix=women%27s%2B%2Bjeans%2Caps%2C266&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Women\'s Dress', 1019)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids' Wear Section -->
+        <section id="kids">
+            <h2>Kid's Wear</h2>
+            <div class="products">
+                
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61WXr3bJLzL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61WXr3bJLzL._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61WXr3bJLzL._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kids's Frock</h3>
+                    <p>₹719</p>
+                    <a href="https://www.amazon.in/POLKA-TOTS-Sleeveless-Breathable-Multicolor/dp/B0DBF1QMVC/ref=sr_1_1_sspa?crid=1LOMH4OOJCZ4X&dib=eyJ2IjoiMSJ9.jPn1Jvfk-IfO490SxURbTFeL13_PV2ytfZ0FooWBUNELPUz979qNv9Fv6zoHUL7qwEsQsOJ0eMEim7DXnO5E_Owj7J3YZZimnVMSvdvL5Rbf0ymYThBIIABris1qVHNo5MiSC4QT8bMiH4LrMh4RjkiCvXjpxDgLe9Cs8qAqAxiMEGkAkmZrfBRW--k6cJCwMD-neVysUjVm1flHbyhXIOwp_oJyUv2yTtX7pfrEiINYSOvA0jpQ6REf9B9WFHPC8qhpomMEiy7wNe9pJ9jORPJsEBc1KK0QXQPI8pGt4to.kLpWTmvp4IzKvhlDa7UNKcWBmzMeTqY8j9V4V3obvY0&dib_tag=se&keywords=frocks+for+kids+cotton+branded&qid=1742399740&sprefix=frocks+for+kids+cotton+branded%2Caps%2C247&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Frock', 719)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/51COhF+FP3L._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/51uNsnFgR6L._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/513rsyOj2GL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kids's Frock</h3>
+                    <p>₹599</p>
+                    <a href="https://www.amazon.in/Niren-Enterprise-Length-sdk777_pink_2-Years-3/dp/B09XF2R4D9/ref=sr_1_15?crid=1LOMH4OOJCZ4X&dib=eyJ2IjoiMSJ9.jPn1Jvfk-IfO490SxURbTFeL13_PV2ytfZ0FooWBUNELPUz979qNv9Fv6zoHUL7qwEsQsOJ0eMEim7DXnO5E_Owj7J3YZZimnVMSvdvL5Rbf0ymYThBIIABris1qVHNo5MiSC4QT8bMiH4LrMh4RjkiCvXjpxDgLe9Cs8qAqAxiMEGkAkmZrfBRW--k6cJCwMD-neVysUjVm1flHbyhXIOwp_oJyUv2yTtX7pfrEiINYSOvA0jpQ6REf9B9WFHPC8qhpomMEiy7wNe9pJ9jORCILw42PBRzud_sM9cC1wVm1wJ0fI8gsnOmc7Z-R_e2eiOFK3w85GsbXogVN9-8rkuP9jO5YNEBis1eaKqDO-CtdbrJYUSlS9A9MsrJadz-0IRHWb_y5B74XDXAGM-O-jfdgTrz-6BFK0vtRfgwYFj5EPGT7zTvROWPQkVEfbH8B.DuAs0JkCNRL4O2hDzk4mQo1loxB7VM3xDb1O2s6n3c4&dib_tag=se&keywords=frocks%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742399740&sprefix=frocks%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C247&sr=8-15&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Frock', 599)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61urvUxHdGL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/41SmxkoGQqL.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61AOK3+yCML.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kids's Frock</h3>
+                    <p>₹699</p>
+                    <a href="https://www.amazon.in/Niren-Enterprise-Knee-Length-Kingfisher-Parent_Red/dp/B0BS19CF6X/ref=sr_1_18?crid=1LOMH4OOJCZ4X&dib=eyJ2IjoiMSJ9.jPn1Jvfk-IfO490SxURbTFeL13_PV2ytfZ0FooWBUNELPUz979qNv9Fv6zoHUL7qwEsQsOJ0eMEim7DXnO5E_Owj7J3YZZimnVMSvdvL5Rbf0ymYThBIIABris1qVHNo5MiSC4QT8bMiH4LrMh4RjkiCvXjpxDgLe9Cs8qAqAxiMEGkAkmZrfBRW--k6cJCwMD-neVysUjVm1flHbyhXIOwp_oJyUv2yTtX7pfrEiINYSOvA0jpQ6REf9B9WFHPC8qhpomMEiy7wNe9pJ9jORCILw42PBRzud_sM9cC1wVm1wJ0fI8gsnOmc7Z-R_e2eiOFK3w85GsbXogVN9-8rkuP9jO5YNEBis1eaKqDO-CtdbrJYUSlS9A9MsrJadz-0IRHWb_y5B74XDXAGM-O-jfdgTrz-6BFK0vtRfgwYFj5EPGT7zTvROWPQkVEfbH8B.DuAs0JkCNRL4O2hDzk4mQo1loxB7VM3xDb1O2s6n3c4&dib_tag=se&keywords=frocks%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742399740&sprefix=frocks%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C247&sr=8-18&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Frock', 699)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71-MnLULcUL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71-MnLULcUL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61MaezD8WtL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kids's Frock</h3>
+                    <p>₹499</p>
+                    <a href="https://www.amazon.in/Niren-Enterprise-Printed-Pattern-1-2Y/dp/B0CX4X3PFF/ref=sr_1_5?crid=1LOMH4OOJCZ4X&dib=eyJ2IjoiMSJ9.jPn1Jvfk-IfO490SxURbTFeL13_PV2ytfZ0FooWBUNELPUz979qNv9Fv6zoHUL7qwEsQsOJ0eMEim7DXnO5E_Owj7J3YZZimnVMSvdvL5Rbf0ymYThBIIABris1qVHNo5MiSC4QT8bMiH4LrMh4RjkiCvXjpxDgLe9Cs8qAqAxiMEGkAkmZrfBRW--k6cJCwMD-neVysUjVm1flHbyhXIOwp_oJyUv2yTtX7pfrEiINYSOvA0jpQ6REf9B9WFHPC8qhpomMEiy7wNe9pJ9jORCILw42PBRzud_sM9cC1wVm1wJ0fI8gsnOmc7Z-R_e2eiOFK3w85GsbXogVN9-8rkuP9jO5YNEBis1eaKqDO-CtdbrJYUSlS9A9MsrJadz-0IRHWb_y5B74XDXAGM-O-jfdgTrz-6BFK0vtRfgwYFj5EPGT7zTvROWPQkVEfbH8B.DuAs0JkCNRL4O2hDzk4mQo1loxB7VM3xDb1O2s6n3c4&dib_tag=se&keywords=frocks%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742399740&sprefix=frocks%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C247&sr=8-5&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Frock', 499)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61gqKNVZjjL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/41938qLK5FL.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/21bW5TA3a6L.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Jacket</h3>
+                    <p>₹699</p>
+                    <a href="https://www.amazon.in/Mini-Berry-Cotton-Standard-Reversible/dp/B0CFRHMWG6/ref=sr_1_5?crid=XF2NC7KM1E0D&dib=eyJ2IjoiMSJ9.TD1bwv-9SI6AKRp2mHem208H5UHnACwkOVhJVO67uku4Ss8c2Jo67nOGe_9iLiFQMFwPYIKtEgEwC_IGxR8q_YD_FQYqaVHHWNxxkvEAIYifHHaGzcC-dAY7EtJAPilqQHVUbgpwizbNPSRaCF7XejhBXvHAOkdcBZLvBIgcPvvqw9TsjE5s3_1JxKMczb5tRp3vsA0XyeEZQs9rnyGoWvwOggSwsObm99bZURXx1NCc79osmfuGlU8xDahNkeEq8T0LhyvRKpWhfzVpjZw1MxY_i3-dUAY13MsihT4RoplBBnCwd0DpAvzEiMhp9FYAz6W-Fg6keclZzkl3djkWR5Hv-o0Ndu6hvLN5o2mep3lZ4KBPFnwGKn2KAVoIu8qvi8fimjftPsxqpXpws5sUjpeDNpOSxx3YYI9KOieUtDA6xcH0TgNa7ZVAeN-wu3PD.inUECceLzRNBtn4IREFZXnDNPVlWm2h1bujhp49KTXw&dib_tag=se&keywords=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742400246&sprefix=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C233&sr=8-5&th=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Jacket', 699)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71fzVAHrkfL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/51n+tjefGKL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61XqO-Yt9aL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Jacket</h3>
+                    <p>₹779</p>
+                    <a href="https://www.amazon.in/Alan-Jones-Clothing-Full-Zip-Yellow_12-13/dp/B0DDHKZPYT/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.2e7595f7-5329-47f7-beca-04dc18a21cee%3Aamzn1.sym.2e7595f7-5329-47f7-beca-04dc18a21cee&crid=XF2NC7KM1E0D&cv_ct_cx=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded&keywords=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded&pd_rd_i=B0DDHKZPYT&pd_rd_r=ab556998-17e8-4067-aab6-a8a440499bc7&pd_rd_w=NEI7e&pd_rd_wg=gVNO3&pf_rd_p=2e7595f7-5329-47f7-beca-04dc18a21cee&pf_rd_r=Y1MAJ9A2EJNM8K3C9K74&qid=1742400246&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C233&sr=1-3-883a54c7-f466-4d42-997c-6d482a360a1a-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Jacket', 799)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71tytemPPuL._SY879_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71NmthArP-L._SY879_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/81X9+GOUT+L._SY879_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Jacket</h3>
+                    <p>₹1,069</p>
+                    <a href="https://www.amazon.in/KiddoPanti-Standard-Closure-Collared-Years-10/dp/B0CKLF989G/ref=sr_1_1_sspa?crid=XF2NC7KM1E0D&dib=eyJ2IjoiMSJ9.TD1bwv-9SI6AKRp2mHem208H5UHnACwkOVhJVO67uku4Ss8c2Jo67nOGe_9iLiFQMFwPYIKtEgEwC_IGxR8q_YD_FQYqaVHHWNxxkvEAIYifHHaGzcC-dAY7EtJAPilqQHVUbgpwizbNPSRaCF7XejhBXvHAOkdcBZLvBIgcPvvqw9TsjE5s3_1JxKMczb5tRp3vsA0XyeEZQs9rnyGoWvwOggSwsObm99bZURXx1NCc79osmfuGlU8xDahNkeEq8T0LhyvRKpWhfzVpjZw1M3hNsr3vJ9rtR8C53tUMN-Q.QxlnSB4i6qk6CKM3JSO7-NtbGVvy1kPvbkXw_IvrLRs&dib_tag=se&keywords=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742400246&sprefix=jackets%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C233&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Jacket', 1069)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61d2BKsIRmL._SX679_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61d2BKsIRmL._SX679_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61d2BKsIRmL._SX679_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Jacket</h3>
+                    <p>₹599</p>
+                    <a href="https://www.amazon.in/Star-Designer-Printed-T-Shirt-Attached/dp/B0CLYS9PCD/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.2e7595f7-5329-47f7-beca-04dc18a21cee%3Aamzn1.sym.2e7595f7-5329-47f7-beca-04dc18a21cee&crid=XF2NC7KM1E0D&cv_ct_cx=jackets+for+kids+cotton+branded&keywords=jackets+for+kids+cotton+branded&pd_rd_i=B0CLYS9PCD&pd_rd_r=ab556998-17e8-4067-aab6-a8a440499bc7&pd_rd_w=NEI7e&pd_rd_wg=gVNO3&pf_rd_p=2e7595f7-5329-47f7-beca-04dc18a21cee&pf_rd_r=Y1MAJ9A2EJNM8K3C9K74&qid=1742400246&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=jackets+for+kids+cotton+branded%2Caps%2C233&sr=1-2-883a54c7-f466-4d42-997c-6d482a360a1a-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Jacket', 599)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71jq-yKuS3L._SY695_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71YCgJCCaHL._SY695_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71YCgJCCaHL._SY695_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Shoes</h3>
+                    <p>₹549</p>
+                    <a href="https://www.amazon.in/ONYC-Toddlerss-Breathable-Footwear-Toddler/dp/B0DS9785PG/ref=sr_1_1_sspa?crid=R26XSY12XJT6&dib=eyJ2IjoiMSJ9.6dycgHrv-iAAEr25QO72NC7m3PCgOFOsj6xkJoeayM_dbR67Wd03xhgXpnsNzCVniMSQyj0e6I8ceu_uFviaq89sE8XHXZJPUIeyqyB-AszOJAkzqjHBela75E-PlsnvLyumb0hV3qOSJEpl5NY2yEaizFWEvHnBkCaPgTyJWpELKlZIJzlKm6MYiDMpUO2WYRjzeEyzVWYsxlAjGIl3dEawzF06cOddf0YLhTaFem-M-bbKYzdclDvY5jrI_RVJlUqsnJ4BaxwvvQNApweJdYGCfWZMR1NY8WeOxxpuEqM.j93yB67SxZu-MG6ovm9Pk98AUwsQZD9CufoRsgM2Nic&dib_tag=se&keywords=shoes%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742400704&sprefix=tshoes%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C242&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kid\'s Shoes', 549)">Add to Cart</button>
+                </div>
+
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61OUE8+AFML._SY695_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61OUE8+AFML._SY695_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71COjlA8vzL._SY695_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kids's Shoes</h3>
+                    <p>₹299</p>
+                    <a href="https://www.amazon.in/FootStation-Girls-Ankle-Comfort-White-Sky/dp/B0CK2N7PC1/ref=sr_1_7?crid=1745BDYO1UGIU&dib=eyJ2IjoiMSJ9.b7xCnq4JEDORQ6k2E28hUMwASyaRE-Ce_9cSaSdPpOhykwB2-kBX2TSz3DjZT8b6CkjdR3yyi0h9Bty5uf-yOnOmarrUv1fs1lAwvsRmw4O0m36q4-mYekBKW-Dtf6TcB-vIakE9V7cbR59Bf_LlYdxf5CNtUCMsZD7vczmvcJTwr0R3a9fOgwHq0AfGR2RkFD2pILBxOqSwGvomLAEmZQlx8ncwXDXlh6tKKKv0Ta0MKaydMR3-DB3zwBAwZkaZ_37b2VzFsIs_LiwUS2KdzqZh8hr3d99kGlQVqt2LWh6GvIsUzNRmJChuUrikbEKs3J7sG28SeQWq_FiLf-fm10LnyMfFJOxoOv-YXIlEZD-D_Kz4iSIepXmcBofTyNJ9dOmspWtUDKkR2WHHk2ob5VSVgcT2NqQo787EQDngsgFcEaBSnV9ksUImZAd1pqjX.cK_ZcjmNUdj_f4_PpJ35Ej1c2GJUM8jdVBo7v0c1kfI&dib_tag=se&keywords=shoes+for+kids+cotton+branded&qid=1742400896&sprefix=shoe+for+kids+cotton+branded%2Caps%2C273&sr=8-7" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kids\'s Shoes', 299)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/61Oq7VR7GGL._SY695_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/51pKjXQ6-ZL._SY695_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/61w5Fnq0FIL._SY695_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Shoes</h3>
+                    <p>₹569</p>
+                    <a href="https://www.amazon.in/FootStation-Kids-Rainbow-Wings-Sticker/dp/B0CKF2PK7J/ref=sr_1_9?crid=1745BDYO1UGIU&dib=eyJ2IjoiMSJ9.b7xCnq4JEDORQ6k2E28hUMwASyaRE-Ce_9cSaSdPpOhykwB2-kBX2TSz3DjZT8b6CkjdR3yyi0h9Bty5uf-yOnOmarrUv1fs1lAwvsRmw4O0m36q4-mYekBKW-Dtf6TcB-vIakE9V7cbR59Bf_LlYdxf5CNtUCMsZD7vczmvcJTwr0R3a9fOgwHq0AfGR2RkFD2pILBxOqSwGvomLAEmZQlx8ncwXDXlh6tKKKv0Ta0MKaydMR3-DB3zwBAwZkaZ_37b2VzFsIs_LiwUS2KdzqZh8hr3d99kGlQVqt2LWh6GvIsUzNRmJChuUrikbEKs3J7sG28SeQWq_FiLf-fm10LnyMfFJOxoOv-YXIlEZD-D_Kz4iSIepXmcBofTyNJ9dOmspWtUDKkR2WHHk2ob5VSVgcT2NqQo787EQDngsgFcEaBSnV9ksUImZAd1pqjX.cK_ZcjmNUdj_f4_PpJ35Ej1c2GJUM8jdVBo7v0c1kfI&dib_tag=se&keywords=shoes%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742400896&sprefix=shoe%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C273&sr=8-9&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kid\'s Shoes', 569)">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="image-gallery">
+                        <img src="https://m.media-amazon.com/images/I/71mcRV3q9iL._SY695_.jpg" alt="Dress Image 1" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71CLUS1ZrqL._SY695_.jpg" alt="Dress Image 2" onclick="openImage(this.src)">
+                        <img src="https://m.media-amazon.com/images/I/71WqcrJm2SL._SY695_.jpg" alt="Dress Image 3" onclick="openImage(this.src)">
+                    </div>
+                    
+                    <h3>Kid's Shoes</h3>
+                    <p>₹549</p>
+                    <a href="https://www.amazon.in/Comfort-D-Light-Assorted-Footwear-Numeric/dp/B0DSVZMJ3B/ref=sr_1_15?crid=1745BDYO1UGIU&dib=eyJ2IjoiMSJ9.b7xCnq4JEDORQ6k2E28hUMwASyaRE-Ce_9cSaSdPpOhykwB2-kBX2TSz3DjZT8b6CkjdR3yyi0h9Bty5uf-yOnOmarrUv1fs1lAwvsRmw4O0m36q4-mYekBKW-Dtf6TcB-vIakE9V7cbR59Bf_LlYdxf5CNtUCMsZD7vczmvcJTwr0R3a9fOgwHq0AfGR2RkFD2pILBxOqSwGvomLAEmZQlx8ncwXDXlh6tKKKv0Ta0MKaydMR3-DB3zwBAwZkaZ_37b2VzFsIs_LiwUS2KdzqZh8hr3d99kGlQVqt2LWh6GvIsUzNRmJChuUrikbEKs3J7sG28SeQWq_FiLf-fm10LnyMfFJOxoOv-YXIlEZD-D_Kz4iSIepXmcBofTyNJ9dOmspWtUDKkR2WHHk2ob5VSVgcT2NqQo787EQDngsgFcEaBSnV9ksUImZAd1pqjX.cK_ZcjmNUdj_f4_PpJ35Ej1c2GJUM8jdVBo7v0c1kfI&dib_tag=se&keywords=shoes%2Bfor%2Bkids%2Bcotton%2Bbranded&qid=1742400896&sprefix=shoe%2Bfor%2Bkids%2Bcotton%2Bbranded%2Caps%2C273&sr=8-15&th=1&psc=1" target="_blank">
+                    <button>Go To Wedsite</button>
+                    </a>
+                    <button onclick="addToCart('Kid\'s Shoes', 549)">Add to Cart</button>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+
+        <!-- Modal for Full-Screen Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
